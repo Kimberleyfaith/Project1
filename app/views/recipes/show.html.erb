@@ -1,0 +1,36 @@
+<h4><a href="javascript:history.back()">Return to Recipes</a></h4>
+
+<h2 class="instructions_show">Instructions</h2>
+<ul class="cook_times">
+
+  <li>
+    Preperation Time:
+    <%= @recipe["preparationMinutes"] %>
+    minutes
+
+  </li>
+  <li>
+    Cooking Time:
+    <%= @recipe["cookingMinutes"] %>
+    minutes
+
+  </li>
+</ul>
+
+<h2 class="ingredients">
+  Ingredients
+</h2>
+<div class="ingredients_list">
+  <ul>
+    <% @ingredients["ingredients"].each do |ingredient_info|%>
+      <li><%= ingredient_info["amount"]["metric"]["value"] %> <%= ingredient_info["amount"]["metric"]["unit"] %>:
+      <%= ingredient_info["name"]%> </li>
+    <% end %>
+  </ul>
+
+</div>
+
+<h2 class="method_show">
+  Method
+</h2>
+<p class="cook_instructions"><%= @recipe["instructions"] %></p>

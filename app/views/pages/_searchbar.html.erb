@@ -1,0 +1,25 @@
+<%= form_for(@recipe, url: recipes_path, method: :get) do |f| %>
+      <div>
+            <%= f.fields_for :ingredients do |f| %>
+                  <%= render 'pages/ingredient_fields', f: f %>
+            <%end%>
+            <div>
+                  <%= link_to_add_association 'Add Ingredient', f, :ingredients, partial:"pages/ingredient_fields", class:"" %>
+            </div>
+      </div>
+      <div>
+            <div >
+                  <% if request.path == "/recipes" %>
+                        <div>
+                              <%= f.select :cuisine, Spoonacular::CUISINES, prompt: 'Cuisines', selected: params[:cuisine], class: "border" %>
+                        </div>
+                        <div>
+                              <%= f.select :intolerances, Spoonacular::INTOLERANCES, prompt: 'Intolerances', selected: params[:intolerances]%>
+                        </div>
+                  <%end%>
+            </div>
+            <div class="inline-block m-2 p-2">
+                  <%= f.submit "Search" %>
+            </div>
+      </div>
+<% end %>

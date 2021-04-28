@@ -1,0 +1,40 @@
+<div>
+
+    <div>
+        <%= link_to 'Edit', edit_my_recipe_path(@recipe) %>
+        <%= link_to "Destroy", my_recipe_path(@recipe),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %>
+    </div>
+        <div>
+            <div>
+                <div>
+                    <%= @recipe.title %>
+                    <h2>
+                </div>
+                <div>
+                    <%= @recipe.description %>
+                 </div>
+            </div>
+        </div>
+    <div>
+        <div>
+            <h2> Steps </h2>
+            <% if @recipe.steps.any? %>
+                <% @recipe.steps.each do |step| %>
+                    <br><%= step.order %>.
+                    <%= step.description %>
+                <%end%>
+            <%end%>
+        </div>
+        <div>
+            <h2> Ingredients </h2>
+            <% if @recipe.ingredients.any? %>
+                <% @recipe.ingredients.each do |ingredient| %>
+                    <br>•<%= ingredient.measurement %>
+                    <%= ingredient.description %>
+                <%end%>
+            <%end%>
+        </div>
+    </div>
+</div>

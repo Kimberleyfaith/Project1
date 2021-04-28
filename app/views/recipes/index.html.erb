@@ -1,0 +1,8 @@
+<h1>Search result</h1>
+
+<div class="results">
+<% @search_results.each do |recipe| %>
+  <h2><%= link_to recipe['title'], recipe_path(recipe['id']) %></h2>
+ <%= image_tag recipe['image'] %>
+<div>
+<% end %>
