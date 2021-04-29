@@ -34,3 +34,5 @@
   Method
 </h2>
 <p class="cook_instructions"><%= @recipe["instructions"] %></p>
+
+<%= link_to "Add recipe", add_recipe_path(@recipe["id"]), :method => "post" %>

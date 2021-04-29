@@ -5,14 +5,11 @@
       Recipe Generator takes ingredients in your fridge and pantry and finds
       recipes you can make with just those ingredients.
 </p>
-<div class="home_form">
+
   <%= form_tag recipes_path, method: :get do %>
     <div class="home_label">  <%= label_tag "Enter your ingredients" %>
-      <%= text_field_tag :ingredients, "", placeholder: "Salmon, Ricotta Cheese" %>
+      <%= text_field_tag :ingredients, "", placeholder: "Salmon, Ricotta Cheese", :required => true %>
       <%= submit_tag "Recipe Search" %>
   <% end %>
-  </div>
-</div>
-<div class="white_space">
 
 </div>

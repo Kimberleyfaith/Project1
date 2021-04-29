@@ -58,4 +58,27 @@ class RecipesController < ApplicationController
 
     end
 
+  def add
+    url = URI("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/#{params[:recipe_id]}/information")
+
+    http = Net::HTTP.new(url.host, url.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+    request = Net::HTTP::Get.new(url)
+    request["x-rapidapi-key"] = ENV["SPOONACULAR_API_KEY"]
+    request["x-rapidapi-host"] = 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
+
+    response = http.request(request)
+    recipe_data = JSON.parse response.read_body
+    recipe = Recipe.create :title => recipe_data["title"], :image => recipe_data["image"]
+    @current_user.recipes << recipe
+
+    redirect_to my_recipes_path
+  end
+
+  def my_recipes
+      @recipes = @current_user.recipes
+  end
+
   end

@@ -165,6 +165,19 @@ h4 {
   background-color: white;
   opacity: 0.7;
 }
+
+.submit {
+height: 31px;
+color: #914e25;
+background-color: #eddbcd;
+border: solid #a36a49 2px;
+}
+
+.home_label input {
+  background-color: white;
+}
+
+
 /* footer {
   background-color: #ebd8ca;
   border: solid #7f4728 1px;
