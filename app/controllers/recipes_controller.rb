@@ -20,7 +20,7 @@ class RecipesController < ApplicationController
       response = http.request(request)
       @search_results = JSON.parse response.read_body
 
-    puts response.read_body
+      puts response.read_body
     end
 
     def show

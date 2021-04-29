@@ -10092,3 +10092,514 @@ Processing by RecipesController#show as HTML
 Completed 200 OK in 1399ms (Views: 10.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/recipes/618390" for ::1 at 2021-04-29 16:43:52 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"618390"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1910ms (Views: 9.8ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:43:55 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=milk%2C+eggs%2C+sugar%2C+chocolate%2C+baking+powder&commit=Recipe+Search" for ::1 at 2021-04-29 16:43:59 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"milk, eggs, sugar, chocolate, baking powder", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 500 Internal Server Error in 1041ms (ActiveRecord: 0.3ms)
+
+
+  
+RuntimeError (hell):
+  
+app/controllers/recipes_controller.rb:23:in `index'
+Started PUT "/__web_console/repl_sessions/934977ddd5d10ab8bd5d5209baac26bb" for ::1 at 2021-04-29 16:44:08 +1000
+Started PUT "/__web_console/repl_sessions/934977ddd5d10ab8bd5d5209baac26bb" for ::1 at 2021-04-29 16:44:10 +1000
+Started PUT "/__web_console/repl_sessions/934977ddd5d10ab8bd5d5209baac26bb" for ::1 at 2021-04-29 16:44:36 +1000
+Started PUT "/__web_console/repl_sessions/934977ddd5d10ab8bd5d5209baac26bb" for ::1 at 2021-04-29 16:44:43 +1000
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=milk%2C+eggs%2C+sugar%2C+chocolate%2C+baking+powder&commit=Recipe+Search" for ::1 at 2021-04-29 16:45:32 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"milk, eggs, sugar, chocolate, baking powder", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1100ms (Views: 9.0ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/recipes?id=483930&image=https%3A%2F%2Fspoonacular.com%2FrecipeImages%2F483930-312x231.jpg&imageType=jpg&likes=95&missedIngredientCount=1&missedIngredients%5B%5D%5Bid%5D=1145&missedIngredients%5B%5D%5Bamount%5D=0.25&missedIngredients%5B%5D%5Bunit%5D=cup&missedIngredients%5B%5D%5BunitLong%5D=cups&missedIngredients%5B%5D%5BunitShort%5D=cup&missedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&missedIngredients%5B%5D%5Bname%5D=unsalted+butter&missedIngredients%5B%5D%5Boriginal%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalString%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalName%5D=unsalted+butter%2C+melted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=unsalted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=melted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=unsalted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=melted&missedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fbutter-sliced.jpg&title=Dark+Chocolate+Muffins&unusedIngredients%5B%5D%5Bid%5D=19081&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&unusedIngredients%5B%5D%5Bname%5D=chocolate&unusedIngredients%5B%5D%5Boriginal%5D=chocolate&unusedIngredients%5B%5D%5BoriginalString%5D=chocolate&unusedIngredients%5B%5D%5BoriginalName%5D=chocolate&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk-chocolate.jpg&unusedIngredients%5B%5D%5Bid%5D=18369&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Baking&unusedIngredients%5B%5D%5Bname%5D=baking+powder&unusedIngredients%5B%5D%5Boriginal%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalString%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalName%5D=baking+powder&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredientCount=4&usedIngredients%5B%5D%5Bid%5D=18371&usedIngredients%5B%5D%5Bamount%5D=2.0&usedIngredients%5B%5D%5Bunit%5D=teaspoons&usedIngredients%5B%5D%5BunitLong%5D=teaspoons&usedIngredients%5B%5D%5BunitShort%5D=tsp&usedIngredients%5B%5D%5Baisle%5D=Baking&usedIngredients%5B%5D%5Bname%5D=baking+powder&usedIngredients%5B%5D%5Boriginal%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalString%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalName%5D=baking+powder&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredients%5B%5D%5Bid%5D=19904&usedIngredients%5B%5D%5Bamount%5D=8.0&usedIngredients%5B%5D%5Bunit%5D=oz&usedIngredients%5B%5D%5BunitLong%5D=ounces&usedIngredients%5B%5D%5BunitShort%5D=oz&usedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&usedIngredients%5B%5D%5Bname%5D=dark+chocolate&usedIngredients%5B%5D%5Boriginal%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalString%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalName%5D=%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=dark&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=60%25&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%28%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=dark&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=60%25&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%28%29&usedIngredients%5B%5D%5BextendedName%5D=60%25+dark+chocolate&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fdark-chocolate-pieces.jpg&usedIngredients%5B%5D%5Bid%5D=1123&usedIngredients%5B%5D%5Bamount%5D=4.0&usedIngredients%5B%5D%5Bunit%5D=large&usedIngredients%5B%5D%5BunitLong%5D=larges&usedIngredients%5B%5D%5BunitShort%5D=large&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=eggs&usedIngredients%5B%5D%5Boriginal%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalString%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalName%5D=eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fegg.png&usedIngredients%5B%5D%5Bid%5D=1077&usedIngredients%5B%5D%5Bamount%5D=0.5&usedIngredients%5B%5D%5Bunit%5D=cup&usedIngredients%5B%5D%5BunitLong%5D=cups&usedIngredients%5B%5D%5BunitShort%5D=cup&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=whole+milk&usedIngredients%5B%5D%5Boriginal%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalString%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalName%5D=whole+milk&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=whole&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=whole&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk.png" for ::1 at 2021-04-29 16:45:35 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"id"=>"483930", "image"=>"https://spoonacular.com/recipeImages/483930-312x231.jpg", "imageType"=>"jpg", "likes"=>"95", "missedIngredientCount"=>"1", "missedIngredients"=>[{"id"=>"1145", "amount"=>"0.25", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"unsalted butter", "original"=>"¼ cup unsalted butter, melted", "originalString"=>"¼ cup unsalted butter, melted", "originalName"=>"unsalted butter, melted", "metaInformation"=>["unsalted", "melted"], "meta"=>["unsalted", "melted"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"}], "title"=>"Dark Chocolate Muffins", "unusedIngredients"=>[{"id"=>"19081", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Sweet Snacks", "name"=>"chocolate", "original"=>"chocolate", "originalString"=>"chocolate", "originalName"=>"chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk-chocolate.jpg"}, {"id"=>"18369", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"baking powder", "originalString"=>"baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}], "usedIngredientCount"=>"4", "usedIngredients"=>[{"id"=>"18371", "amount"=>"2.0", "unit"=>"teaspoons", "unitLong"=>"teaspoons", "unitShort"=>"tsp", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"2 teaspoons baking powder", "originalString"=>"2 teaspoons baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}, {"id"=>"19904", "amount"=>"8.0", "unit"=>"oz", "unitLong"=>"ounces", "unitShort"=>"oz", "aisle"=>"Sweet Snacks", "name"=>"dark chocolate", "original"=>"8oz (2 bars) dark (60%) chocolate", "originalString"=>"8oz (2 bars) dark (60%) chocolate", "originalName"=>"(2 bars) dark (60%) chocolate", "metaInformation"=>["dark", "60%", "(2 bars)", "()"], "meta"=>["dark", "60%", "(2 bars)", "()"], "extendedName"=>"60% dark chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/dark-chocolate-pieces.jpg"}, {"id"=>"1123", "amount"=>"4.0", "unit"=>"large", "unitLong"=>"larges", "unitShort"=>"large", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"eggs", "original"=>"4 large eggs, lightly beaten", "originalString"=>"4 large eggs, lightly beaten", "originalName"=>"eggs, lightly beaten", "metaInformation"=>["lightly beaten"], "meta"=>["lightly beaten"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/egg.png"}, {"id"=>"1077", "amount"=>"0.5", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"whole milk", "original"=>"½ cup whole milk", "originalString"=>"½ cup whole milk", "originalName"=>"whole milk", "metaInformation"=>["whole"], "meta"=>["whole"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk.png"}]}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 805ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?id=483930&image=https%3A%2F%2Fspoonacular.com%2FrecipeImages%2F483930-312x231.jpg&imageType=jpg&likes=95&missedIngredientCount=1&missedIngredients%5B%5D%5Bid%5D=1145&missedIngredients%5B%5D%5Bamount%5D=0.25&missedIngredients%5B%5D%5Bunit%5D=cup&missedIngredients%5B%5D%5BunitLong%5D=cups&missedIngredients%5B%5D%5BunitShort%5D=cup&missedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&missedIngredients%5B%5D%5Bname%5D=unsalted+butter&missedIngredients%5B%5D%5Boriginal%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalString%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalName%5D=unsalted+butter%2C+melted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=unsalted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=melted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=unsalted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=melted&missedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fbutter-sliced.jpg&title=Dark+Chocolate+Muffins&unusedIngredients%5B%5D%5Bid%5D=19081&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&unusedIngredients%5B%5D%5Bname%5D=chocolate&unusedIngredients%5B%5D%5Boriginal%5D=chocolate&unusedIngredients%5B%5D%5BoriginalString%5D=chocolate&unusedIngredients%5B%5D%5BoriginalName%5D=chocolate&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk-chocolate.jpg&unusedIngredients%5B%5D%5Bid%5D=18369&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Baking&unusedIngredients%5B%5D%5Bname%5D=baking+powder&unusedIngredients%5B%5D%5Boriginal%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalString%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalName%5D=baking+powder&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredientCount=4&usedIngredients%5B%5D%5Bid%5D=18371&usedIngredients%5B%5D%5Bamount%5D=2.0&usedIngredients%5B%5D%5Bunit%5D=teaspoons&usedIngredients%5B%5D%5BunitLong%5D=teaspoons&usedIngredients%5B%5D%5BunitShort%5D=tsp&usedIngredients%5B%5D%5Baisle%5D=Baking&usedIngredients%5B%5D%5Bname%5D=baking+powder&usedIngredients%5B%5D%5Boriginal%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalString%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalName%5D=baking+powder&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredients%5B%5D%5Bid%5D=19904&usedIngredients%5B%5D%5Bamount%5D=8.0&usedIngredients%5B%5D%5Bunit%5D=oz&usedIngredients%5B%5D%5BunitLong%5D=ounces&usedIngredients%5B%5D%5BunitShort%5D=oz&usedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&usedIngredients%5B%5D%5Bname%5D=dark+chocolate&usedIngredients%5B%5D%5Boriginal%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalString%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalName%5D=%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=dark&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=60%25&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%28%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=dark&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=60%25&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%28%29&usedIngredients%5B%5D%5BextendedName%5D=60%25+dark+chocolate&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fdark-chocolate-pieces.jpg&usedIngredients%5B%5D%5Bid%5D=1123&usedIngredients%5B%5D%5Bamount%5D=4.0&usedIngredients%5B%5D%5Bunit%5D=large&usedIngredients%5B%5D%5BunitLong%5D=larges&usedIngredients%5B%5D%5BunitShort%5D=large&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=eggs&usedIngredients%5B%5D%5Boriginal%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalString%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalName%5D=eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fegg.png&usedIngredients%5B%5D%5Bid%5D=1077&usedIngredients%5B%5D%5Bamount%5D=0.5&usedIngredients%5B%5D%5Bunit%5D=cup&usedIngredients%5B%5D%5BunitLong%5D=cups&usedIngredients%5B%5D%5BunitShort%5D=cup&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=whole+milk&usedIngredients%5B%5D%5Boriginal%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalString%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalName%5D=whole+milk&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=whole&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=whole&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk.png" for ::1 at 2021-04-29 16:45:40 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"id"=>"483930", "image"=>"https://spoonacular.com/recipeImages/483930-312x231.jpg", "imageType"=>"jpg", "likes"=>"95", "missedIngredientCount"=>"1", "missedIngredients"=>[{"id"=>"1145", "amount"=>"0.25", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"unsalted butter", "original"=>"¼ cup unsalted butter, melted", "originalString"=>"¼ cup unsalted butter, melted", "originalName"=>"unsalted butter, melted", "metaInformation"=>["unsalted", "melted"], "meta"=>["unsalted", "melted"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"}], "title"=>"Dark Chocolate Muffins", "unusedIngredients"=>[{"id"=>"19081", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Sweet Snacks", "name"=>"chocolate", "original"=>"chocolate", "originalString"=>"chocolate", "originalName"=>"chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk-chocolate.jpg"}, {"id"=>"18369", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"baking powder", "originalString"=>"baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}], "usedIngredientCount"=>"4", "usedIngredients"=>[{"id"=>"18371", "amount"=>"2.0", "unit"=>"teaspoons", "unitLong"=>"teaspoons", "unitShort"=>"tsp", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"2 teaspoons baking powder", "originalString"=>"2 teaspoons baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}, {"id"=>"19904", "amount"=>"8.0", "unit"=>"oz", "unitLong"=>"ounces", "unitShort"=>"oz", "aisle"=>"Sweet Snacks", "name"=>"dark chocolate", "original"=>"8oz (2 bars) dark (60%) chocolate", "originalString"=>"8oz (2 bars) dark (60%) chocolate", "originalName"=>"(2 bars) dark (60%) chocolate", "metaInformation"=>["dark", "60%", "(2 bars)", "()"], "meta"=>["dark", "60%", "(2 bars)", "()"], "extendedName"=>"60% dark chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/dark-chocolate-pieces.jpg"}, {"id"=>"1123", "amount"=>"4.0", "unit"=>"large", "unitLong"=>"larges", "unitShort"=>"large", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"eggs", "original"=>"4 large eggs, lightly beaten", "originalString"=>"4 large eggs, lightly beaten", "originalName"=>"eggs, lightly beaten", "metaInformation"=>["lightly beaten"], "meta"=>["lightly beaten"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/egg.png"}, {"id"=>"1077", "amount"=>"0.5", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"whole milk", "original"=>"½ cup whole milk", "originalString"=>"½ cup whole milk", "originalName"=>"whole milk", "metaInformation"=>["whole"], "meta"=>["whole"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk.png"}]}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 633ms (Views: 10.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?id=483930&image=https%3A%2F%2Fspoonacular.com%2FrecipeImages%2F483930-312x231.jpg&imageType=jpg&likes=95&missedIngredientCount=1&missedIngredients%5B%5D%5Bid%5D=1145&missedIngredients%5B%5D%5Bamount%5D=0.25&missedIngredients%5B%5D%5Bunit%5D=cup&missedIngredients%5B%5D%5BunitLong%5D=cups&missedIngredients%5B%5D%5BunitShort%5D=cup&missedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&missedIngredients%5B%5D%5Bname%5D=unsalted+butter&missedIngredients%5B%5D%5Boriginal%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalString%5D=%C2%BC+cup+unsalted+butter%2C+melted&missedIngredients%5B%5D%5BoriginalName%5D=unsalted+butter%2C+melted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=unsalted&missedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=melted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=unsalted&missedIngredients%5B%5D%5Bmeta%5D%5B%5D=melted&missedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fbutter-sliced.jpg&title=Dark+Chocolate+Muffins&unusedIngredients%5B%5D%5Bid%5D=19081&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&unusedIngredients%5B%5D%5Bname%5D=chocolate&unusedIngredients%5B%5D%5Boriginal%5D=chocolate&unusedIngredients%5B%5D%5BoriginalString%5D=chocolate&unusedIngredients%5B%5D%5BoriginalName%5D=chocolate&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk-chocolate.jpg&unusedIngredients%5B%5D%5Bid%5D=18369&unusedIngredients%5B%5D%5Bamount%5D=1.0&unusedIngredients%5B%5D%5Bunit%5D=serving&unusedIngredients%5B%5D%5BunitLong%5D=serving&unusedIngredients%5B%5D%5BunitShort%5D=serving&unusedIngredients%5B%5D%5Baisle%5D=Baking&unusedIngredients%5B%5D%5Bname%5D=baking+powder&unusedIngredients%5B%5D%5Boriginal%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalString%5D=baking+powder&unusedIngredients%5B%5D%5BoriginalName%5D=baking+powder&unusedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredientCount=4&usedIngredients%5B%5D%5Bid%5D=18371&usedIngredients%5B%5D%5Bamount%5D=2.0&usedIngredients%5B%5D%5Bunit%5D=teaspoons&usedIngredients%5B%5D%5BunitLong%5D=teaspoons&usedIngredients%5B%5D%5BunitShort%5D=tsp&usedIngredients%5B%5D%5Baisle%5D=Baking&usedIngredients%5B%5D%5Bname%5D=baking+powder&usedIngredients%5B%5D%5Boriginal%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalString%5D=2+teaspoons+baking+powder&usedIngredients%5B%5D%5BoriginalName%5D=baking+powder&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fwhite-powder.jpg&usedIngredients%5B%5D%5Bid%5D=19904&usedIngredients%5B%5D%5Bamount%5D=8.0&usedIngredients%5B%5D%5Bunit%5D=oz&usedIngredients%5B%5D%5BunitLong%5D=ounces&usedIngredients%5B%5D%5BunitShort%5D=oz&usedIngredients%5B%5D%5Baisle%5D=Sweet+Snacks&usedIngredients%5B%5D%5Bname%5D=dark+chocolate&usedIngredients%5B%5D%5Boriginal%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalString%5D=8oz+%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BoriginalName%5D=%282+bars%29+dark+%2860%25%29+chocolate&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=dark&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=60%25&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=%28%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=dark&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=60%25&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%282+bars%29&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=%28%29&usedIngredients%5B%5D%5BextendedName%5D=60%25+dark+chocolate&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fdark-chocolate-pieces.jpg&usedIngredients%5B%5D%5Bid%5D=1123&usedIngredients%5B%5D%5Bamount%5D=4.0&usedIngredients%5B%5D%5Bunit%5D=large&usedIngredients%5B%5D%5BunitLong%5D=larges&usedIngredients%5B%5D%5BunitShort%5D=large&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=eggs&usedIngredients%5B%5D%5Boriginal%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalString%5D=4+large+eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BoriginalName%5D=eggs%2C+lightly+beaten&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=lightly+beaten&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fegg.png&usedIngredients%5B%5D%5Bid%5D=1077&usedIngredients%5B%5D%5Bamount%5D=0.5&usedIngredients%5B%5D%5Bunit%5D=cup&usedIngredients%5B%5D%5BunitLong%5D=cups&usedIngredients%5B%5D%5BunitShort%5D=cup&usedIngredients%5B%5D%5Baisle%5D=Milk%2C+Eggs%2C+Other+Dairy&usedIngredients%5B%5D%5Bname%5D=whole+milk&usedIngredients%5B%5D%5Boriginal%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalString%5D=%C2%BD+cup+whole+milk&usedIngredients%5B%5D%5BoriginalName%5D=whole+milk&usedIngredients%5B%5D%5BmetaInformation%5D%5B%5D=whole&usedIngredients%5B%5D%5Bmeta%5D%5B%5D=whole&usedIngredients%5B%5D%5Bimage%5D=https%3A%2F%2Fspoonacular.com%2Fcdn%2Fingredients_100x100%2Fmilk.png" for ::1 at 2021-04-29 16:45:59 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"id"=>"483930", "image"=>"https://spoonacular.com/recipeImages/483930-312x231.jpg", "imageType"=>"jpg", "likes"=>"95", "missedIngredientCount"=>"1", "missedIngredients"=>[{"id"=>"1145", "amount"=>"0.25", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"unsalted butter", "original"=>"¼ cup unsalted butter, melted", "originalString"=>"¼ cup unsalted butter, melted", "originalName"=>"unsalted butter, melted", "metaInformation"=>["unsalted", "melted"], "meta"=>["unsalted", "melted"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"}], "title"=>"Dark Chocolate Muffins", "unusedIngredients"=>[{"id"=>"19081", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Sweet Snacks", "name"=>"chocolate", "original"=>"chocolate", "originalString"=>"chocolate", "originalName"=>"chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk-chocolate.jpg"}, {"id"=>"18369", "amount"=>"1.0", "unit"=>"serving", "unitLong"=>"serving", "unitShort"=>"serving", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"baking powder", "originalString"=>"baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}], "usedIngredientCount"=>"4", "usedIngredients"=>[{"id"=>"18371", "amount"=>"2.0", "unit"=>"teaspoons", "unitLong"=>"teaspoons", "unitShort"=>"tsp", "aisle"=>"Baking", "name"=>"baking powder", "original"=>"2 teaspoons baking powder", "originalString"=>"2 teaspoons baking powder", "originalName"=>"baking powder", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg"}, {"id"=>"19904", "amount"=>"8.0", "unit"=>"oz", "unitLong"=>"ounces", "unitShort"=>"oz", "aisle"=>"Sweet Snacks", "name"=>"dark chocolate", "original"=>"8oz (2 bars) dark (60%) chocolate", "originalString"=>"8oz (2 bars) dark (60%) chocolate", "originalName"=>"(2 bars) dark (60%) chocolate", "metaInformation"=>["dark", "60%", "(2 bars)", "()"], "meta"=>["dark", "60%", "(2 bars)", "()"], "extendedName"=>"60% dark chocolate", "image"=>"https://spoonacular.com/cdn/ingredients_100x100/dark-chocolate-pieces.jpg"}, {"id"=>"1123", "amount"=>"4.0", "unit"=>"large", "unitLong"=>"larges", "unitShort"=>"large", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"eggs", "original"=>"4 large eggs, lightly beaten", "originalString"=>"4 large eggs, lightly beaten", "originalName"=>"eggs, lightly beaten", "metaInformation"=>["lightly beaten"], "meta"=>["lightly beaten"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/egg.png"}, {"id"=>"1077", "amount"=>"0.5", "unit"=>"cup", "unitLong"=>"cups", "unitShort"=>"cup", "aisle"=>"Milk, Eggs, Other Dairy", "name"=>"whole milk", "original"=>"½ cup whole milk", "originalString"=>"½ cup whole milk", "originalName"=>"whole milk", "metaInformation"=>["whole"], "meta"=>["whole"], "image"=>"https://spoonacular.com/cdn/ingredients_100x100/milk.png"}]}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 728ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=milk%2C+eggs%2C+sugar%2C+chocolate%2C+baking+powder&commit=Recipe+Search" for ::1 at 2021-04-29 16:46:01 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"milk, eggs, sugar, chocolate, baking powder", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1016ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/483930" for ::1 at 2021-04-29 16:46:03 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"483930"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1333ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:51:58 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 41ms (Views: 15.1ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:52:00 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 78ms (Views: 50.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=chocolate%2C+eggs%2C+milk%2C+baking+powder%2C+flour%2C+butter%2C+vanilla+essence&commit=Recipe+Search" for ::1 at 2021-04-29 16:52:04 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"chocolate, eggs, milk, baking powder, flour, butter, vanilla essence", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1067ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/60238" for ::1 at 2021-04-29 16:52:08 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"60238"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1267ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:52:14 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=bread%2C+feta+cheese%2C+potatoes%2C+tuna%2C+cauliflower%2C+beef%2C+pork%2C+prawns&commit=Recipe+Search" for ::1 at 2021-04-29 16:52:17 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"bread, feta cheese, potatoes, tuna, cauliflower, beef, pork, prawns", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1253ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:52:22 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=celery%2C+pear&commit=Recipe+Search" for ::1 at 2021-04-29 16:52:33 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"celery, pear", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 865ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/560600" for ::1 at 2021-04-29 16:52:39 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"560600"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1554ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/recipes/add/560600" for ::1 at 2021-04-29 16:52:46 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"srO3H4nzf7cUuS9sUQAhw4e5RE1XNvmOmfT4lC-Ym8Sm4Firy9vkq_ah0vAHczPrD0PQjTvT9bG1OS0MalLltA", "recipe_id"=>"560600"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[36mRecipe Create (1.4ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "image") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Celery Pear Healthy Green Juice"], ["image", "https://spoonacular.com/recipeImages/560600-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:75
+  [1m[36mRecipe Update (0.6ms)[0m  [1m[33mUPDATE "recipes" SET "user_id" = $1 WHERE "recipes"."id" = $2[0m  [["user_id", 9], ["id", 4]]
+  ↳ app/controllers/recipes_controller.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:75
+Redirected to http://localhost:3000/my/recipes
+Completed 302 Found in 703ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:52:46 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:52:51 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/4" for ::1 at 2021-04-29 16:53:05 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1333ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/4" for ::1 at 2021-04-29 16:53:48 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1301ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/560600" for ::1 at 2021-04-29 16:54:03 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"560600"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1463ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/recipes/add/560600" for ::1 at 2021-04-29 16:54:14 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"M09KjbWl9feOqB7SLhi0EAtD8SR_s_kAJDFpPpzqUrUnHKU5941u62yw4054a6Y4g7ll5BNW9T8I_Lym2SAsxQ", "recipe_id"=>"560600"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[36mRecipe Create (0.9ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "image") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Celery Pear Healthy Green Juice"], ["image", "https://spoonacular.com/recipeImages/560600-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:74
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:75
+  [1m[36mRecipe Update (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "user_id" = $1 WHERE "recipes"."id" = $2[0m  [["user_id", 9], ["id", 5]]
+  ↳ app/controllers/recipes_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:75
+Redirected to http://localhost:3000/my/recipes
+Completed 302 Found in 785ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:54:14 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/5" for ::1 at 2021-04-29 16:54:17 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1464ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/5" for ::1 at 2021-04-29 16:54:43 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1399ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:54:46 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:54:50 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=celery%2C+pear&commit=Recipe+Search" for ::1 at 2021-04-29 16:54:57 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"celery, pear", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 721ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/560600" for ::1 at 2021-04-29 16:54:59 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"560600"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1416ms (Views: 8.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:55:14 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:55:35 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/5" for ::1 at 2021-04-29 16:55:38 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1306ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/560600" for ::1 at 2021-04-29 16:55:56 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"560600"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1402ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:56:06 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/5" for ::1 at 2021-04-29 16:56:09 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1328ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:56:25 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:56:28 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 16:57:55 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 16:58:53 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-29 16:59:01 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/railties-5.2.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/actionpack-5.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (2.8ms)
+  Rendered /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/actionpack-5.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/railties-5.2.5/lib/rails/templates/rails/info/routes.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-29 17:00:04 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 939ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-29 17:00:33 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 967ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 17:00:38 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" ORDER BY "recipes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRecipe Destroy (1.1ms)[0m  [1m[31mDELETE FROM "recipes" WHERE "recipes"."id" = $1[0m  [["id", 5]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+Started GET "/my/recipes" for ::1 at 2021-04-29 17:03:01 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
