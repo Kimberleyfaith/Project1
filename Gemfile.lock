@@ -80,11 +80,12 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.1.0)
+    mini_portile2 (2.1.0)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.3-x86_64-darwin)
-      racc (~> 1.4)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -92,7 +93,6 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     puma (3.12.6)
-    racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -168,7 +168,6 @@ GEM
 
 PLATFORMS
   ruby
-  x86_64-darwin-20
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -177,6 +176,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  nokogiri (~> 1.6.8)
   pg (>= 0.18, < 2.0)
   pry-rails
   puma (~> 3.11)
@@ -193,4 +193,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.16
+   2.1.4

@@ -1,4 +1,4 @@
-<h4><a href="javascript:history.back()">Return to Recipes</a></h4>
+<h4><a class="return" href="javascript:history.back()">Return to Recipes</a></h4>
 
 <h2 class="instructions_show">Instructions</h2>
 <ul class="cook_times">
@@ -23,7 +23,7 @@
 <div class="ingredients_list">
   <ul>
     <% @ingredients["ingredients"].each do |ingredient_info|%>
-      <li><%= ingredient_info["amount"]["metric"]["value"] %> <%= ingredient_info["amount"]["metric"]["unit"] %>:
+      <li><%= ingredient_info["amount"]["metric"]["value"].ceil %> <%= ingredient_info["amount"]["metric"]["unit"] %>:
       <%= ingredient_info["name"]%> </li>
     <% end %>
   </ul>
