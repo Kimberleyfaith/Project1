@@ -10603,3 +10603,628 @@ Processing by RecipesController#my_recipes as HTML
 Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-29 17:10:21 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 926ms (Views: 13.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/618390" for ::1 at 2021-04-29 17:10:27 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"618390"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1324ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 17:20:30 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:20:34 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:46 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:49 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-29 17:25:16 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:26 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/login" for ::1 at 2021-04-29 17:25:28 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iBIBWKR6zoTVB0Uj26F6GQ2I_P7DgiQv2N5peoGWmGicQe7s5lJVmDcfuL-N0mgxhXJoPq9nKBD0E7zixFzmGA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2021-04-29 17:25:28 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-04-29 17:25:42 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 05:48:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 06:37:17 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-30 06:38:21 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 963ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 06:38:29 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2021-04-30 06:38:30 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 7.9ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 06:38:33 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 06:38:36 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 06:56:02 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-04-30 06:56:06 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gj5WuGO8dPtHaeUulAWc1XbERC7z97Xn1Nq7pBAJoYiVrme6QEMp6v_KC0PNZXDTifuNMqETRagXx_HiG_QTKA", "email"=>"jonesy@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 273ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 06:56:06 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-30 06:56:10 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 967ms (Views: 8.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/675955" for ::1 at 2021-04-30 06:56:13 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"675955"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1767ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 06:56:29 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1357ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 06:58:07 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1378ms (Views: 14.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 06:59:47 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1476ms (Views: 10.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:00:17 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1396ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:01:19 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1373ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:02:29 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1493ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:02:40 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1420ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:04:16 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1419ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:05:26 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1409ms (Views: 29.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:07:30 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1629ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:09:48 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5231ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:10:49 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1489ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:12:04 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1479ms (Views: 40.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:12:47 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1578ms (Views: 38.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:13:44 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1382ms (Views: 29.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/175511" for ::1 at 2021-04-30 07:14:05 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"175511"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1469ms (Views: 36.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:14:19 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:54:26 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 37.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:54:48 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 33.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:55:05 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:56:07 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:56:31 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:57:24 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:57:36 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:58:31 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:58:59 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:59:02 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:59:20 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 24.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 07:59:28 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 08:00:27 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples%2C+pastry%2C+sugar&commit=Recipe+Search" for ::1 at 2021-04-30 08:00:53 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples, pastry, sugar", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2717ms (Views: 28.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/recipes/685707" for ::1 at 2021-04-30 08:01:12 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"685707"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 3105ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/recipes/add/685707" for ::1 at 2021-04-30 08:01:28 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"9gylbNtwnTbgOH16JveDODIM2WnNlR_06HLpRMDwkCPiX0rYmVgGKgIggOZwhJEQuvZNqaFwE8vEvzzchTruUw", "recipe_id"=>"685707"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[36mRecipe Create (1.7ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "image") VALUES ($1, $2) RETURNING "id"[0m  [["title", "Quick Apple Tarts"], ["image", "https://spoonacular.com/recipeImages/685707-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[36mRecipe Update (1.4ms)[0m  [1m[33mUPDATE "recipes" SET "user_id" = $1 WHERE "recipes"."id" = $2[0m  [["user_id", 6], ["id", 6]]
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:77
+Redirected to http://localhost:3000/my/recipes
+Completed 302 Found in 1072ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:01:29 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:02:25 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:02:53 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:03:43 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 08:03:53 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 240ms (Views: 212.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:03:58 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 08:04:02 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 08:04:08 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 08:04:21 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 08:05:30 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 0.9ms)
+
+

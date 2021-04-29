@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root :to => 'pages#home'
   resources :users, :only => [:new, :create]
-  resources :about, only: [:index]
   resources :recipes
   get '/my/recipes' => 'recipes#my_recipes'
 

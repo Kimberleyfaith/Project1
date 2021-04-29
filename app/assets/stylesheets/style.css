@@ -43,7 +43,6 @@ h1 {
 
 h2 {
   text-align: center;
-  padding-left: 6em;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -81,6 +80,7 @@ input {
 .results {
   text-align: center;
   background-color: white;
+  margin-top: 4em;
 }
 
 .recipe_image {
@@ -152,13 +152,26 @@ h4 {
   padding-right: 22px;
 }
 
-.return {
+.return_recipe {
   color: black;
-  margin-right: 10px;
+  margin-right: 28px;
+}
+
+.add_recipe {
+  margin-left: 28px;
+}
+
+.recipe_add_return {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 900;
 }
 
 .recipe_name {
   font-size: 16px;
+  margin-left: 0px;
 }
 
 .white_space {
@@ -174,7 +187,10 @@ border: solid #a36a49 2px;
 }
 
 .home_label input {
-  background-color: white;
+  background-color: #f4f1ed;
+  border: solid #ead5c6 3px;
+  color: #5d4f41;
+
 }
 
 
