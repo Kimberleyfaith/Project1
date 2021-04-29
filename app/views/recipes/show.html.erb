@@ -23,7 +23,7 @@
 <div class="ingredients_list">
   <ul>
     <% @ingredients["ingredients"].each do |ingredient_info|%>
-      <li><%= ingredient_info["amount"]["metric"]["value"] %> <%= ingredient_info["amount"]["metric"]["unit"] %>:
+      <li><%= ingredient_info["amount"]["metric"]["value"].to_f.ceil %> <%= ingredient_info["amount"]["metric"]["unit"] %>:
       <%= ingredient_info["name"]%> </li>
     <% end %>
   </ul>
