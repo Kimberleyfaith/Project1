@@ -2,7 +2,9 @@
 
 <div class="results">
   <% @search_results.each do |recipe| %>
-    <h2 class="recipe_name"><%= link_to recipe['title'], recipe_path(recipe['id']) %></h2>
+    <h2 class="recipe_name">
+      <%= link_to recipe['title'], recipe_path(recipe['id'].to_i) %>
+    </h2>
 
      <%= image_tag recipe['image'] %>
   <% end %>
