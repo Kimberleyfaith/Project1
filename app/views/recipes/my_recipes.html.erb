@@ -1,8 +1,8 @@
-<h1>My Recipes</h1>
+<h2 class="my_recipe_h2">My Recipes</h2>
 
 <div class="results">
   <% @recipes.each do |recipe| %>
-    <h2 class="recipe_name"><%=recipe['title'] %></h2>
+    <h2 class="my_recipe_name"><%=recipe['title'] %></h2>
 
      <%= image_tag recipe['image'] %>
   <% end %>

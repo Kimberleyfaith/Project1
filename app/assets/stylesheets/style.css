@@ -48,7 +48,7 @@ h2 {
 
 form {
   text-align: center;
-  margin-left: 5em;
+
 }
 
 input {
@@ -62,6 +62,12 @@ input {
 .home_h1 {
   text-align: center;
   width: 96%;
+  margin-top: 5em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.my_recipe_h2 {
+  font-family: 'Quicksand', sans-serif;
   margin-top: 5em;
 }
 
@@ -80,7 +86,7 @@ input {
 .results {
   text-align: center;
   background-color: white;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .recipe_image {
@@ -125,11 +131,9 @@ text-align: left;
 
 .home_label {
 letter-spacing: 2px;
+padding-right: 2em;
 }
 
-.home_label {
-padding-right: 9em;
-}
 
 img {
   width: 18em;
@@ -171,7 +175,7 @@ h4 {
 
 .recipe_name {
   font-size: 16px;
-  margin-left: 0px;
+  margin-left: 6em;
 }
 
 .white_space {
@@ -186,24 +190,21 @@ background-color: #eddbcd;
 border: solid #a36a49 2px;
 }
 
-.home_label input {
+input {
   background-color: #f4f1ed;
   border: solid #ead5c6 3px;
   color: #5d4f41;
-
 }
 
+.home_h2 {
+  margin-top: 6em;
+}
 
-/* footer {
-  background-color: #ebd8ca;
-  border: solid #7f4728 1px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height: 77px;
-  max-width: 960px;
-  margin: 0 auto;
-  letter-spacing: 3px;
-  padding-top: 30px;
+.home_p {
+  text-align: center;
+  margin-right: 23px;
+}
 
-
-} */
+.my_recipe_name {
+  font-size: 16px;
+}
