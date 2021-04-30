@@ -16,15 +16,21 @@ ActiveRecord::Schema.define(version: 2021_04_29_023147) do
   enable_extension "plpgsql"
 
   create_table "ingredients", force: :cascade do |t|
+    t.string "measurement", null: false
+    t.string "description", null: false
+    t.bigint "recipe_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
     t.text "title"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.text "image"
-    t.integer "user_id"
-  end
-
-  create_table "steps", force: :cascade do |t|
+    t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -12059,3 +12059,559 @@ Processing by SessionController#new as HTML
 Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(431183776978142475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeleteDescriptionInRecipes (20210430002359)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mALTER TABLE "recipes" DROP COLUMN "description"[0m
+  ↳ db/migrate/20210430002359_delete_description_in_recipes.rb:3
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(431183776978142475)[0m
+  ↳ bin/rails:9
+Started POST "/login" for ::1 at 2021-04-30 10:26:18 +1000
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.5) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8114.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crudbud_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (33.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crudbud_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (26.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crudbud_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (103.3ms)[0m  [1m[35mCREATE DATABASE "crudbud_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (33.0ms)[0m  [1m[35mCREATE DATABASE "crudbud_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(431183776978142475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210424070415)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210424070415_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210424070415"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToUsers (20210424070910)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  ↳ db/migrate/20210424070910_add_password_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210424070910"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateIngredients (20210426094657)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "measurement" character varying NOT NULL, "description" character varying NOT NULL, "recipe_id" bigint NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210426094657_create_ingredients.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_ingredients_on_recipe_id" ON "ingredients"  ("recipe_id")[0m
+  ↳ db/migrate/20210426094657_create_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210426094657"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20210426195801)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "title" character varying NOT NULL, "description" character varying NOT NULL, "user_id" bigint NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210426195801_create_recipes.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_recipes_on_user_id" ON "recipes"  ("user_id")[0m
+  ↳ db/migrate/20210426195801_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210426195801"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddDetailsToRecipes (20210429023147)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "title" TYPE text[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image" text[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "recipes" DROP COLUMN "description"[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210429023147"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-30 00:30:48.744971"], ["updated_at", "2021-04-30 00:30:48.744971"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(431183776978142475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-04-30 10:31:09 +1000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :check_for_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 10:31:09 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 205ms (Views: 203.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-04-30 10:31:15 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugZyMtIKfWSXuxM8l2HKVu_gllNIHSbuPERHmn6xVzSuVZ2GkCLmeHWj7qDBEth-ZxoCkyT4KtEQiZICO3spRA", "email"=>"jonesy@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 31ms (ActiveRecord: 22.4ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 10:31:16 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:2
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "jonesy@ga.co"], ["created_at", "2021-04-30 00:31:31.585112"], ["updated_at", "2021-04-30 00:31:31.585112"], ["password_digest", "$2a$12$78KhLEe7iL/z1d0Gth0vI./aRDWzoUxKuFxIHRDM8Xm4/vE0linZ."]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "craigsy@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "craigsy@ga.co"], ["created_at", "2021-04-30 00:31:31.852979"], ["updated_at", "2021-04-30 00:31:31.852979"], ["password_digest", "$2a$12$dMs3yS7GVFPhKe6lfg84luOTZdKi4UbJR8Rl6E1Zo52DHemfUZx86"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:4
+Started GET "/login" for ::1 at 2021-04-30 10:31:38 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-04-30 10:31:49 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Jb6JU4ffA084qPkXiZobG6FV02eeLehvb2cZ2gM2sPAxRWRDDfnEd76XngIVXpE5n_DjfKdu56RcEn_Lcaksw", "email"=>"jonesy@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 284ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 10:31:49 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=milk%2C+eggs%2C+sugar%2C+chocolate%2C+baking+powder&commit=Recipe+Search" for ::1 at 2021-04-30 10:31:53 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"milk, eggs, sugar, chocolate, baking powder", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1042ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/159889" for ::1 at 2021-04-30 10:31:58 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"159889"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1272ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/recipes/add/159889" for ::1 at 2021-04-30 10:32:02 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"OuRs-eA6Ormrv2v8EoOIq3u4bIG9XYJqOsoNG-JVY7cut4NNohKhpUmnlmBE8JqD80L4QdG4jlUWB9iDp58dxw", "recipe_id"=>"159889"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[36mRecipe Create (2.8ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Ultimate Melt-in-Your-Mouth Pancakes"], ["created_at", "2021-04-30 00:32:03.241390"], ["updated_at", "2021-04-30 00:32:03.241390"], ["image", "https://spoonacular.com/recipeImages/159889-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/recipes_controller.rb:76
+Completed 500 Internal Server Error in 1114ms (ActiveRecord: 29.2ms)
+
+
+  
+ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "user_id" of relation "recipes" violates not-null constraint
+DETAIL:  Failing row contains (1, Ultimate Melt-in-Your-Mouth Pancakes, null, 2021-04-30 00:32:03.24139, 2021-04-30 00:32:03.24139, https://spoonacular.com/recipeImages/159889-556x370.jpg).
+: INSERT INTO "recipes" ("title", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4) RETURNING "id"):
+  
+app/controllers/recipes_controller.rb:76:in `add'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (15.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crudbud_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (20.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "crudbud_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (97.2ms)[0m  [1m[35mCREATE DATABASE "crudbud_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (37.9ms)[0m  [1m[35mCREATE DATABASE "crudbud_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(431183776978142475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20210424070415)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210424070415_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210424070415"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToUsers (20210424070910)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  ↳ db/migrate/20210424070910_add_password_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210424070910"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateIngredients (20210426094657)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "measurement" character varying NOT NULL, "description" character varying NOT NULL, "recipe_id" bigint NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210426094657_create_ingredients.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX  "index_ingredients_on_recipe_id" ON "ingredients"  ("recipe_id")[0m
+  ↳ db/migrate/20210426094657_create_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210426094657"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20210426195801)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "title" character varying, "description" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20210426195801_create_recipes.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX  "index_recipes_on_user_id" ON "recipes"  ("user_id")[0m
+  ↳ db/migrate/20210426195801_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210426195801"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddDetailsToRecipes (20210429023147)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "recipes" ALTER COLUMN "title" TYPE text[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "recipes" ADD "image" text[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:4
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "recipes" DROP COLUMN "description"[0m
+  ↳ db/migrate/20210429023147_add_details_to_recipes.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210429023147"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-30 00:33:09.616361"], ["updated_at", "2021-04-30 00:33:09.616361"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(431183776978142475)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:2
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "jonesy@ga.co"], ["created_at", "2021-04-30 00:33:19.662728"], ["updated_at", "2021-04-30 00:33:19.662728"], ["password_digest", "$2a$12$ajjwVh0U2detFL25qNKvUe0.k3ykExjOcssnowpIUy4OaVwvn4AV6"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "craigsy@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:3
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "craigsy@ga.co"], ["created_at", "2021-04-30 00:33:19.930290"], ["updated_at", "2021-04-30 00:33:19.930290"], ["password_digest", "$2a$12$9HSJfGElgRxjXBx3fvrLYeEvPxVMRScbJxgPCCjww5Rg1up4XswsS"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:4
+Started POST "/recipes/add/159889" for ::1 at 2021-04-30 10:33:28 +1000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kimberleyfaith/.rvm/gems/ruby-2.7.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"OuRs-eA6Ormrv2v8EoOIq3u4bIG9XYJqOsoNG-JVY7cut4NNohKhpUmnlmBE8JqD80L4QdG4jlUWB9iDp58dxw", "recipe_id"=>"159889"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 14.7ms)
+
+
+  
+NameError (uninitialized constant RecipesController::Net):
+  
+app/controllers/recipes_controller.rb:66:in `add'
+Started GET "/recipes/159889" for ::1 at 2021-04-30 10:33:33 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"159889"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant RecipesController::Net):
+  
+app/controllers/recipes_controller.rb:31:in `show'
+Started GET "/" for ::1 at 2021-04-30 10:33:38 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 10:33:39 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-30 10:33:41 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 993ms (Views: 9.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/recipes/675955" for ::1 at 2021-04-30 10:33:44 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"675955"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1800ms (Views: 13.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/recipes/add/675955" for ::1 at 2021-04-30 10:33:47 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"KR6P6VGpy76Rocbr0mxdcBULJkdF6CqaIaCupVhqA389TWBdE4FQonO5O3eEH09YnfGyhykNJqUNbXs9HaB9Dw", "recipe_id"=>"675955"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[36mRecipe Create (2.0ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Hard-Boiled Eggs"], ["created_at", "2021-04-30 00:33:48.971331"], ["updated_at", "2021-04-30 00:33:48.971331"], ["image", "https://spoonacular.com/recipeImages/675955-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[36mRecipe Update (0.8ms)[0m  [1m[33mUPDATE "recipes" SET "user_id" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["user_id", 1], ["updated_at", "2021-04-30 00:33:48.980429"], ["id", 1]]
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:77
+Redirected to http://localhost:3000/my/recipes
+Completed 302 Found in 1220ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 10:33:48 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 10:33:51 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=milk%2C+eggs%2C+sugar%2C+chocolate%2C+baking+powder&commit=Recipe+Search" for ::1 at 2021-04-30 10:33:54 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"milk, eggs, sugar, chocolate, baking powder", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1031ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/252586" for ::1 at 2021-04-30 10:33:57 +1000
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"252586"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/show.html.erb within layouts/application
+  Rendered recipes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1253ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/recipes/add/252586" for ::1 at 2021-04-30 10:34:00 +1000
+Processing by RecipesController#add as HTML
+  Parameters: {"authenticity_token"=>"-BhE90oKQp7V3p5GPmuvkf69_vcB4SJxKr3cGs6QYZjsS6tDCCLZgjfGY9poGL25dkdqN20ELk4GcAmCi1of6A", "recipe_id"=>"252586"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Chocolate Chip Bread Pudding"], ["created_at", "2021-04-30 00:34:01.000593"], ["updated_at", "2021-04-30 00:34:01.000593"], ["image", "https://spoonacular.com/recipeImages/252586-556x370.jpg"]]
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:76
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[36mRecipe Update (0.5ms)[0m  [1m[33mUPDATE "recipes" SET "user_id" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["user_id", 1], ["updated_at", "2021-04-30 00:34:01.002711"], ["id", 2]]
+  ↳ app/controllers/recipes_controller.rb:77
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/recipes_controller.rb:77
+Redirected to http://localhost:3000/my/recipes
+Completed 302 Found in 639ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/my/recipes" for ::1 at 2021-04-30 10:34:01 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
