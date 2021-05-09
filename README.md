@@ -4,7 +4,7 @@
 
 It is a recipe generator app where users can get recipe ideas by entering the ingredients that they have at home.
 
-![screenshot](images/Recipe_Generator.png)
+![Alt Text](/images/Recipe_Generator.png "A screenshot of the home page of Recipe Generator")
 
 ## Built With
 
