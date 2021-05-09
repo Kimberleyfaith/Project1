@@ -12615,3 +12615,58 @@ Processing by RecipesController#my_recipes as HTML
 Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/my/recipes" for ::1 at 2021-04-30 11:24:45 +1000
+Processing by RecipesController#my_recipes as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/my_recipes.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/recipes/my_recipes.html.erb:4
+  Rendered recipes/my_recipes.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 62ms (Views: 15.2ms | ActiveRecord: 38.0ms)
+
+
+Started DELETE "/login" for ::1 at 2021-04-30 11:24:50 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CrPDOBCcsMgAFdRPiq5TtOlLzn_mDN7CumanyGsFncIe4CyMUrQr1OINKdPc3UGcYbFav4rp0v2Wq3JQLs_jsg"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2021-04-30 11:24:50 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2021-04-30 12:12:49 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4677N9N-14Z1A5QRGb6uAkRg-FW428kaVBcDhvTCrwT3VRYnWVgQvvM88wSFeiQgesXIToGYxtFnYmWXhl0zA", "email"=>"jonesy@ga.co", "password"=>"[FILTERED]", "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jonesy@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 281ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/" for ::1 at 2021-04-30 12:12:50 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes?utf8=%E2%9C%93&ingredients=Eggs%2C+Flour%2C+Apples&commit=Recipe+Search" for ::1 at 2021-04-30 12:12:52 +1000
+Processing by RecipesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ingredients"=>"Eggs, Flour, Apples", "commit"=>"Recipe Search"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1130ms (Views: 8.3ms | ActiveRecord: 0.7ms)
+
+

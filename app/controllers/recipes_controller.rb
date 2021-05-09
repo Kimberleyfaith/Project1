@@ -7,7 +7,7 @@ class RecipesController < ApplicationController
       require 'net/http'
       require 'openssl'
 
-      url = URI("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=#{params[:ingredients]}&number=3&ignorePantry=true&ranking=2")
+      url = URI("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=#{params[:ingredients]}&number=10&ignorePantry=true&ranking=2")
 
       http = Net::HTTP.new(url.host, url.port)
       http.use_ssl = true
@@ -18,7 +18,7 @@ class RecipesController < ApplicationController
       request["x-rapidapi-host"] = 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
 
       response = http.request(request)
-      @search_results = JSON.parse response.read_body
+      @search_results = JSON.parse response.read_body # gets all recipes - limit of 3
 
       puts response.read_body
   end
@@ -33,11 +33,11 @@ class RecipesController < ApplicationController
       http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
       request = Net::HTTP::Get.new(url)
-      request["x-rapidapi-key"] = ENV["SPOONACULAR_API_KEY"] #hidden API key
+      request["x-rapidapi-key"] = ENV["SPOONACULAR_API_KEY"] # hidden API key
       request["x-rapidapi-host"] = 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com'
 
       response = http.request(request)
-      @recipe = JSON.parse response.read_body
+      @recipe = JSON.parse response.read_body # gets the recipe
 
       p url_ingredients = URI("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/#{params[:id]}/ingredientWidget.json")
 
@@ -51,7 +51,7 @@ class RecipesController < ApplicationController
 
       response_ingredients = http.request(request_ingredients)
       # puts response_ingredients.read_body
-      @ingredients = JSON.parse response_ingredients.read_body
+      @ingredients = JSON.parse # data is a string (which looks like a hash -> convert to hash) response_ingredients.read_body
       p "RECIPES"
       # p @recipe
       p "INGREDIENTS"
